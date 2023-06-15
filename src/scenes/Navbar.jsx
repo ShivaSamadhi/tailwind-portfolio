@@ -65,7 +65,7 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
 
 {/*Mobile Navbar*/}
            {!aboveSmScreen && isMenuToggled && (
-               <div className="fixed right-0 bottom-0 h-full bg-blue w-[90%]">
+               <div className="fixed right-0 bottom-0 h-full bg-blue w-[75%]">
 
                {/*Close Icon*/}
                    <div className="flex justify-end p-12">
@@ -76,10 +76,30 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
                {/*Close Icon*/}
 
                {/*Menu Items*/}
-                   <div className="flex flex-col">
-
+                   <div className="flex flex-col gap-10 mx-[33%] text-2xl text-deep-blue">
+                       <Link
+                           page="Home"
+                           selectedPage={selectedPage}
+                           setSelectedPage={setSelectedPage}/>
+                       <Link
+                           page="Skills"
+                           selectedPage={selectedPage}
+                           setSelectedPage={setSelectedPage}/>
+                       <Link
+                           page="Projects"
+                           selectedPage={selectedPage}
+                           setSelectedPage={setSelectedPage}/>
+                       <Link
+                           page="Testimonials"
+                           selectedPage={selectedPage}
+                           setSelectedPage={setSelectedPage}/>
+                       <Link
+                           page="Contact"
+                           selectedPage={selectedPage}
+                           setSelectedPage={setSelectedPage}/>
                    </div>
                {/*Menu Links*/}
+
                </div>
             )
            }
