@@ -54,11 +54,36 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
                    </div>
                ) :
                (
-                   <div>
-
-                   </div>
+                   <button
+                       className="rounded-full bg-red p-2"
+                       onClick={()=> setIsMenuToggled(!isMenuToggled)}
+                   >
+                       <img alt='menu' src="../assets/menu-icon.svg"/>
+                   </button>
                )
            }
+
+{/*Mobile Navbar*/}
+           {!aboveSmScreen && isMenuToggled && (
+               <div className="fixed right-0 bottom-0 h-full bg-blue w-[90%]">
+
+               {/*Close Icon*/}
+                   <div className="flex justify-end p-12">
+                       <button onClick={()=>setIsMenuToggled(!isMenuToggled)}>
+                           <img alt="close-icon" src="../assets/close-icon.svg"/>
+                       </button>
+                   </div>
+               {/*Close Icon*/}
+
+               {/*Menu Items*/}
+                   <div className="flex flex-col">
+
+                   </div>
+               {/*Menu Links*/}
+               </div>
+            )
+           }
+
         </div>
       </nav>
   )
