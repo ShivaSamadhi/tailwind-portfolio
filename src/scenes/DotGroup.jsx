@@ -3,7 +3,7 @@ import SideLink from "./LinkComponents/SideLink";
 const DotGroup = ({selectedPage, setSelectedPage}) => {
 
   return (
-      <div className="flex flex-col gap-10 fixed top-[60%] right-7">
+      <div className="flex flex-col gap-10 fixed top-[50%] right-7">
           <SideLink
               page="home"
               selectedPage={selectedPage}
