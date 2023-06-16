@@ -1,20 +1,7 @@
 import {useState} from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import AnchorLink from "react-anchor-link-smooth-scroll/lib/anchor-link";
+import NavLink from "./LinkComponents/NavLink";
 
-const Link = ({page, selectedPage, setSelectedPage}) => {
-    const pageLowerCase = page.toLowerCase()
-
-    return (
-        <AnchorLink
-            className={`${selectedPage === pageLowerCase ? "text-yellow": ""} hover:text-yellow transition duration-500`}
-            href={`#${pageLowerCase}`}
-            onClick={()=> setSelectedPage(pageLowerCase)}
-        >
-            {page}
-        </AnchorLink>
-    )
-}
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false)
     const aboveSmScreen = useMediaQuery("(min-width: 769px)")
@@ -31,23 +18,23 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
            {aboveSmScreen ?
                (
                    <div className="flex justify-between gap-16 text-sm font-semibold">
-                       <Link
+                       <NavLink
                            page="Home"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Skills"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Projects"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Testimonials"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Contact"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
@@ -77,23 +64,23 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
 
                {/*Menu Items*/}
                    <div className="flex flex-col gap-10 mx-[33%] text-2xl text-deep-blue">
-                       <Link
+                       <NavLink
                            page="Home"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Skills"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Projects"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Testimonials"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
-                       <Link
+                       <NavLink
                            page="Contact"
                            selectedPage={selectedPage}
                            setSelectedPage={setSelectedPage}/>
