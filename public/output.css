@@ -573,6 +573,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -615,6 +619,10 @@ video {
 
 .z-0{
   z-index: 0;
+}
+
+.z-30{
+  z-index: 30;
 }
 
 .m-\[33\%\]{
@@ -666,8 +674,16 @@ video {
   margin-left: 5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-full{
@@ -712,6 +728,10 @@ video {
 
 .basis-3\/5{
   flex-basis: 60%;
+}
+
+.basis-2\/5{
+  flex-basis: 40%;
 }
 
 .resize{

@@ -22,7 +22,16 @@ const Landing = ({setSelectedPage}) => {
 						src="../assets/profile-image.png"
 					/>
 				)}
+			</div>
 
+			<div className="z-30 basis-2/5 mt-12 md:mt-32">
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: .5 }}
+				>
+
+				</motion.div>
 			</div>
 		</section>
 	)
