@@ -625,6 +625,10 @@ video {
   z-index: 30;
 }
 
+.z-20{
+  z-index: 20;
+}
+
 .m-\[33\%\]{
   margin: 33%;
 }
@@ -817,6 +821,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-playfair{
   font-family: Playfair Display, serif;
 }
@@ -834,6 +842,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -899,6 +912,66 @@ body,
 .before\:-top-20::before{
   content: var(--tw-content);
   top: -5rem;
+}
+
+.before\:-left-\[20px\]::before{
+  content: var(--tw-content);
+  left: -20px;
+}
+
+.before\:-left-\[25px\]::before{
+  content: var(--tw-content);
+  left: -25px;
+}
+
+.before\:-top-\[25px\]::before{
+  content: var(--tw-content);
+  top: -25px;
+}
+
+.before\:-top-\[30px\]::before{
+  content: var(--tw-content);
+  top: -30px;
+}
+
+.before\:-top-\[50px\]::before{
+  content: var(--tw-content);
+  top: -50px;
+}
+
+.before\:-top-\[100px\]::before{
+  content: var(--tw-content);
+  top: -100px;
+}
+
+.before\:-top-\[70px\]::before{
+  content: var(--tw-content);
+  top: -70px;
+}
+
+.before\:-left-\[30px\]::before{
+  content: var(--tw-content);
+  left: -30px;
+}
+
+.before\:-top-\[150px\]::before{
+  content: var(--tw-content);
+  top: -150px;
+}
+
+.before\:-top-\[125px\]::before{
+  content: var(--tw-content);
+  top: -125px;
+}
+
+.before\:-left-\[35px\]::before{
+  content: var(--tw-content);
+  left: -35px;
+}
+
+.before\:-left-\[40px\]::before{
+  content: var(--tw-content);
+  left: -40px;
 }
 
 .before\:z-\[-1\]::before{
@@ -981,6 +1054,26 @@ body,
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+
+  .xs\:font-semibold{
+    font-weight: 600;
+  }
+
+  .xs\:text-deep-blue{
+    --tw-text-opacity: 1;
+    color: rgb(1 0 38 / var(--tw-text-opacity));
+  }
+
+  .xs\:before\:content-brush::before{
+    --tw-content: url('./assets/brush.png');
+    content: var(--tw-content);
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
@@ -1008,5 +1101,9 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 }

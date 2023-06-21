@@ -29,8 +29,18 @@ const Landing = ({setSelectedPage}) => {
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: .5 }}
+					transition={{ duration: .5 }}
+					variants={{
+						hidden: {opacity: 0, x: -50},
+						visible: {opacity: 1, x: 0},
+					}}
 				>
-
+					<p className="text-6xl font-playfair z-10 text-center md:text-start">
+						Ramaj {""}
+						<span className="z-20 xs:relative xs:text-deep-blue xs:font-semibold xs:before:content-brush before:absolute before:z-5 before:-left-[40px] before:-top-[125px] before:z-[-1]">
+						Johnson
+						</span>
+					</p>
 				</motion.div>
 			</div>
 		</section>
