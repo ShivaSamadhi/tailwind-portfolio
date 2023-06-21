@@ -37,9 +37,12 @@ const Landing = ({setSelectedPage}) => {
 				>
 					<p className="text-6xl font-playfair z-10 text-center md:text-start">
 						Ramaj {""}
-						<span className="z-10 xs:relative xs:text-deep-blue xs:font-semibold xs:before:content-brush before:absolute before:z-5 before:-left-[40px] before:-top-[125px] before:z-[-1]">
+						<span className="z-10 xs:relative xs:text-deep-blue xs:font-semibold xs:before:content-brush before:absolute before:z-5 before:-left-[40px] before:-top-[115px] before:z-[-1]">
 						Johnson
 						</span>
+					</p>
+					<p className="mt-10 mb-7 text-lg text-center xs:text-xl mx-auto max-w-[400px] md:text-start md:max-w-[600px]">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eos hic maxime necessitatibus ratione, repellendus?
 					</p>
 				</motion.div>
 			</div>
