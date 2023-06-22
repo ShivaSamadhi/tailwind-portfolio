@@ -25,7 +25,7 @@ const Landing = ({setSelectedPage}) => {
 				)}
 			</div>
 
-			<div className="z-30 basis-2/5 mt-12 md:mt-32">
+			<div className="z-30 md:basis-3/5 mt-12 md:mt-32">
 				<motion.div
 					initial="hidden"
 					whileInView="visible"
@@ -42,7 +42,7 @@ const Landing = ({setSelectedPage}) => {
 						Johnson
 						</span>
 					</p>
-					<p className="mt-10 mb-7 text-lg text-center xs:text-xl mx-auto max-w-[400px] md:text-start md:max-w-[600px]">
+					<p className="mt-10 mb-7 text-lg text-center xs:text-xl mx-auto max-w-[400px]  md:text-start md:ml-0">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eos hic maxime necessitatibus ratione, repellendus?
 					</p>
 				</motion.div>
