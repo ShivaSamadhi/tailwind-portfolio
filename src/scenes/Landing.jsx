@@ -1,6 +1,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import {motion} from "framer-motion";
-import anchorLink from "react-anchor-link-smooth-scroll/lib/anchor-link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Landing = ({setSelectedPage}) => {
 	const isLgScreen = useMediaQuery(`(min-width: 1060px)`)
 
@@ -44,6 +45,26 @@ const Landing = ({setSelectedPage}) => {
 					<p className="mt-10 mb-7 text-lg text-center xs:text-xl mx-auto max-w-[400px] md:text-start md:max-w-[600px]">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eos hic maxime necessitatibus ratione, repellendus?
 					</p>
+				</motion.div>
+
+				<motion.div
+					className="flex mt-5 justify-center md:justify-start"
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: .5 }}
+					transition={{ delay: .2, duration: .5 }}
+					variants={{
+						hidden: {opacity: 0, x: -50},
+						visible: {opacity: 1, x: 0},
+					}}
+				>
+					<AnchorLink
+						className="bg-gradient-rainblue text-deep-blue rounded-lg py-3 px-7 font-semibold hover:bg-deep-blue hover:text-white transition duration-500"
+						onClick={()=> setSelectedPage("contact")}
+						href="#contact"
+					>
+						Contact Me
+					</AnchorLink>
 				</motion.div>
 			</div>
 		</section>
