@@ -1,7 +1,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import {motion} from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcon from "./LinkComponents/SocialMediaIcon";
+import SocialMediaIcons from "./LinkComponents/SocialMediaIcons";
 
 const Landing = ({setSelectedPage}) => {
 	const isLgScreen = useMediaQuery(`(min-width: 1060px)`)
@@ -88,7 +88,7 @@ const Landing = ({setSelectedPage}) => {
 						visible: {opacity: 1, x: 0},
 					}}
 				>
-					<SocialMediaIcon/>
+					<SocialMediaIcons/>
 				</motion.div>
 			</div>
 		</section>

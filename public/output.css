@@ -662,6 +662,11 @@ video {
   margin-right: 75%;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .ml-\[33\%\]{
   margin-left: 33%;
 }
@@ -796,6 +801,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .rounded-full{
@@ -1172,6 +1181,10 @@ body,
 .hover\:text-red:hover{
   --tw-text-opacity: 1;
   color: rgb(220 68 146 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-50:hover{
+  opacity: 0.5;
 }
 
 .hover\:saturate-150:hover{
