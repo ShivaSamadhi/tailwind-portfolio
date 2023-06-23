@@ -3,6 +3,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
+import MySkills from "./scenes/MySkills";
 
 
 const App = () => {
@@ -23,9 +24,8 @@ const App = () => {
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}/>
-
-
+        setSelectedPage={setSelectedPage}
+      />
       <div className="w-5/6 mx-auto md:h-full">
       {/*Desktop Side Nav*/}
       {isLgScreen && (
@@ -34,12 +34,13 @@ const App = () => {
               setSelectedPage={setSelectedPage}
           />
       )}
+      {/*Desktop Side Nav*/}
           <Landing
               setSelectedPage={setSelectedPage}
           />
       </div>
-      {/*Desktop Side Nav*/}
-
+      <LineGradient />
+      <MySkills />
     </div>
   );
 }
