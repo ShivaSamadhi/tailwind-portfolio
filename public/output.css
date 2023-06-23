@@ -699,6 +699,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
 .flex{
   display: flex;
 }
@@ -928,6 +932,14 @@ video {
 
 .pr-0\.5{
   padding-right: 0.125rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
