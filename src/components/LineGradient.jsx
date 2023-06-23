@@ -1,10 +1,8 @@
 
 
-const LineGradient = () => {
+const LineGradient = ({width = "w-full"}) => {
 
-	return (
-
-	)
+	return <div className={`h-0.5 ${width} bg-gradient-rainblue`}/>
 }
 
 export default LineGradient
